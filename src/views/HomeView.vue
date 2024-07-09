@@ -1,35 +1,18 @@
 <template>
   <div class="home">
     <h1>Welcome to Yaling`s Vue3.js App</h1>
-    <p>
-      Form this page, you can learn some easy Page
-      <a href="https://cli.vuejs.org" target="_blank" rel="noopener">vue-cli documentation</a>.
-    </p>
+    <p>This project is for me to record my own learning vue3 process and commonly used pages</p>
     <h3>Login Page</h3>
     <ul>
-      <li><a href="https://github.com/vuejs/vue-cli/tree/dev/packages/%40vue/cli-plugin-typescript" target="_blank"
-          rel="noopener">typescript</a></li>
+      <router-link to="/simple-login">Simple Login</router-link>
     </ul>
-    <h3>Essential Links</h3>
+    <h3>My Accounts</h3>
     <ul>
-      <li><a href="https://vuejs.org" target="_blank" rel="noopener">Core Docs</a></li>
-      <li><a href="https://forum.vuejs.org" target="_blank" rel="noopener">Forum</a></li>
-      <li><a href="https://chat.vuejs.org" target="_blank" rel="noopener">Community Chat</a></li>
-      <li><a href="https://twitter.com/vuejs" target="_blank" rel="noopener">Twitter</a></li>
-      <li><a href="https://news.vuejs.org" target="_blank" rel="noopener">News</a></li>
-    </ul>
-    <h3>Ecosystem</h3>
-    <ul>
-      <li><a href="https://router.vuejs.org" target="_blank" rel="noopener">vue-router</a></li>
-      <li><a href="https://vuex.vuejs.org" target="_blank" rel="noopener">vuex</a></li>
-      <li><a href="https://github.com/vuejs/vue-devtools#vue-devtools" target="_blank" rel="noopener">vue-devtools</a>
-      </li>
-      <li><a href="https://vue-loader.vuejs.org" target="_blank" rel="noopener">vue-loader</a></li>
-      <li><a href="https://github.com/vuejs/awesome-vue" target="_blank" rel="noopener">awesome-vue</a></li>
+      <li><a href="https://github.com/Hi-Sun/" target="_blank" rel="noopener">github</a></li>
+      <li><a href="https://blog.csdn.net/Helloyaling?spm=1010.2135.3001.5343" target="_blank" rel="noopener">csdn</a></li>
     </ul>
   </div>
 </template>
-
 
 <script>
 import HelloWorld from '@/components/HelloWorld.vue'
