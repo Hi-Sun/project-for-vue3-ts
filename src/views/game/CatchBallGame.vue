@@ -8,7 +8,6 @@
         @click="handlePauseOrContinueGame">{{ status === 'pausing' ? 'continue' : 'Pause' }} game</el-button>
     </div>
   </div>
-
 </template>
 
 <script setup lang="ts">
@@ -129,7 +128,7 @@ const handlePauseOrContinueGame = () => {
 }
 
 const handleGameOver = () => {
-  ElMessage.error('游戏结束！')
+  ElMessage.error('游戏失败！')
   status.value = 'end'
   clearInterval(Number(intervalRef.value))
 }
