@@ -113,11 +113,6 @@ const handleLogin = () => {
 </script>
 
 <style lang="scss" scoped>
-%bg {
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-}
 
 .login {
   min-height: 675px;

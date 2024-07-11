@@ -12,6 +12,14 @@ export default () => {
         '@': path.resolve(__dirname, './src')
       }
     },
+    css: {
+      // css预处理器
+      preprocessorOptions: {
+        scss: {
+          additionalData:  '@import "./src/styles/variable.scss";'
+        }
+      }
+    },
     server: {
       host: '0.0.0.0',
       port: 8080,
