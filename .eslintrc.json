@@ -1,0 +1,57 @@
+{
+	"parser": "vue-eslint-parser",
+	"parserOptions": {
+		"parser": "@typescript-eslint/parser",
+		"ecmaVersion": 2020,
+		"sourceType": "module",
+		"ecmaFeatures": {
+			"jsx": true
+		}
+	},
+	"extends": [
+		"eslint:recommended",
+		"plugin:@typescript-eslint/recommended",
+		"plugin:vue/vue3-recommended", // Vue 3 推荐配置
+		"plugin:prettier/recommended" // prettier
+	],
+	"plugins": [
+		"@typescript-eslint", // 启用 TypeScript 插件
+		"prettier" // 启用 prettier
+	],
+	"env": {
+		"browser": true,
+		"node": true,
+		"es2020": true
+	},
+	"overrides": [
+		{
+			"files": ["src/**/*.ts", "src/**/*.tsx"],
+			"rules": {
+				"prettier/prettier": [
+					"error",
+					{
+						"semi": true
+					}
+				],
+				"semi": ["warn", "always"], // 错误：要求每条语句结尾有分号
+				"@typescript-eslint/explicit-module-boundary-types": "off",
+				"quotes": ["error", "double"] // 强制使用双引
+			}
+		},
+		{
+			"files": ["*.vue"],
+			"rules": {
+				"prettier/prettier": [
+					"error",
+					{
+						"semi": true
+					}
+				],
+				// TypeScript 特定规则
+				"semi": ["warn", "always"], // 错误：要求每条语句结尾有分号
+				"quotes": ["error", "double"], // 强制使用双引
+				"@typescript-eslint/explicit-module-boundary-types": "off"
+			}
+		}
+	]
+}
